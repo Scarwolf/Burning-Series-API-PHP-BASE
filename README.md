@@ -6,10 +6,10 @@ This Repository contains some base files to use the Burning-Series API with PHP.
 REPOSITORY CONTAINS
 ===================
 
-  ->  index.php
-  ->  view.php
-        - Parameter(s):
-            o GET: "id" (This is the series id from Burning Series)
+  - index.php
+  - view.php
+        -> Parameter(s):
+            GET: "id" (This is the series id from Burning Series)
             
 
 LICENSE
