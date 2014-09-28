@@ -13,5 +13,6 @@
 
     for($i=0; $i<count($ser); $i++){
         echo '['.$i.'] | <strong>Name: </strong><a href="views.php?id='.$ser[$i]['id'].'">'.$ser[$i]['series'].'</a> | <strong>ID: </strong>'.$ser[$i]['id'].'<br>';
+        // 0 | Name: [Link]Serienname[/Link] | SerienID
     }
 ?>
