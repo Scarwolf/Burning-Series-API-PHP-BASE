@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
 </head>
 <body>
-
-</body>
-</html>
 <?php
     $json_file = file_get_contents('https://www.burning-seri.es/api/series');
     $ser = json_decode($json_file, true);
@@ -16,3 +13,5 @@
         // 0 | Name: [Link]Serienname[/Link] | SerienID
     }
 ?>
+</body>
+</html>
