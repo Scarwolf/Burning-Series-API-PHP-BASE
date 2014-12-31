@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
 </head>
 <body>
-</body>
-</html>
 <?php
     // Variables BEGIN
         $sid = $_GET['id']; //Speichert den ?id=X GET-Parameter in $sid
@@ -30,6 +28,13 @@
     echo '<strong>Beschreibung:</strong> '.$desc.'<br>';
     echo '<strong>Filme:</strong> '.$movies.'<br>';
     echo '<strong>Staffeln:</strong> '.$seasons.'<br>';
+	
+	for($i=0; $i<=$seasons; $i++){
+        echo '['.$i.'] | <strong>Season: </strong><a href="seasons.php?id='.$sid.'&season='.$i.'">'.$i.'</a> <br>';
+        // 0 | Name: [Link]Serienname[/Link] | SerienID
+    }
+	
+	
     echo '<strong>Produktionsjahre:</strong> '.$start.' - '.$end.'<br>';
     echo '<br>';
     echo '<strong>Produzenten:</strong>';
@@ -61,3 +66,5 @@
     echo '</ul>';
     // Display END
 ?>
+</body>
+</html>
