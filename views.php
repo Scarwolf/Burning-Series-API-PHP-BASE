@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
 </head>
 <body>
+</body>
+</html>
 <?php
     // Variables BEGIN
         $sid = $_GET['id']; //Speichert den ?id=X GET-Parameter in $sid
@@ -66,5 +68,3 @@
     echo '</ul>';
     // Display END
 ?>
-</body>
-</html>
