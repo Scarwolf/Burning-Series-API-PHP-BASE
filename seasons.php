@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
 </head>
 <body>
+</body>
+</html>
 <?php
     // Variables BEGIN
         $sid = $_GET['id']; //Speichert den ?id=X GET-Parameter in $sid
@@ -21,7 +23,7 @@
 
     // Display BEGIN		
 
-    echo '<img src="https://b-s.cc/img/cover/'.$id.'.jpg" alt=""><br><br>'; // Zeigt Cover an (Format ist immer https://b-s.cc/img/cover/ >ID DER SERIE< .jpg
+    echo '<img src="https://b-s.cc/img/cover/'.$sid.'.jpg" alt=""><br><br>'; // Zeigt Cover an (Format ist immer https://b-s.cc/img/cover/ >ID DER SERIE< .jpg
     echo '<strong>ID:</strong> '.$id.'<br>';
     echo '<strong>Name:</strong> '.$name.'<br>';
     echo '<strong>Beschreibung:</strong> '.$desc.'<br>';
@@ -62,11 +64,9 @@
 	echo 'Staffel: '.$season.'<br>';
 	
     for($i=0; $i<count($episode); $i++){
-        echo '['.$i.'] | <strong>Episode: </strong>'.$episode[$i]['epi'].' | <strong>Deutscher Titel: </strong>'.$episode[$i]['german'].' | <strong>Englischer Titel: </strong>'.$episode[$i]['english'].'<br>';
+        echo '['.$episode[$i]['epi'].'] | <strong>Episode: </strong><a href="episode.php?id='.$sid.'&season='.$season.'&episode='.$episode[$i]['epi'].'">'.$episode[$i]['epi'].'</a> | <strong>Deutscher Titel: </strong>'.$episode[$i]['german'].' | <strong>Englischer Titel: </strong>'.$episode[$i]['english'].'<br>';
         // 0 | Name: [Link]Serienname[/Link] | SerienID
     }
 	
     // Display END
 ?>
-</body>
-</html>
