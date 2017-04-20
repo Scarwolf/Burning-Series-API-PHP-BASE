@@ -15,3 +15,10 @@ REPOSITORY CONTAINS
 LICENSE
 =======
 You are free to use the files from this repository, you are free to change them and learn from them.
+
+
+```PHP
+public function add(){
+  echo "test";
+}
+```
